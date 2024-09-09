@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #FC1370;
+  --primary-color-hover: #d31360;
+  --secondary-color: #00ff00;
+  --secondary-color-hover: #02da02;
+  --color-rider: #000000;
+}
+::-moz-selection {
+  color: white;
+  background: var(--primary-color-hover);
+}
+::selection  {
+  color: white;
+  background: var(--primary-color-hover);
+}
+a{
+  text-decoration: none;
+  list-style: none;
+}
+a:hover{
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary-color-hover);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.jumbotron p {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+footer {
+  margin-top: 20px;
+}
+.navbar {
+  transition: background-image .5s ease-in;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: background-image .5s ease-in-out;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease-in;
+}
+
+#dynamic-text {
+  opacity: 1;
+  transition: .4s ease-in-out;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active, 
+.carousel-item-next, 
+.carousel-item-prev {
+  display: flex;
+}
+
+.carousel-item-next, 
+.carousel-item-prev {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.col-md-4 {
+  flex: 1 0 0%;
+}
+
+
+/* Color de boton hero */
+.btn-wsp{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-wsp:hover{
+  background-color: var(--primary-color-hover);
+  color: #fff;
+}
+.btn-wsp-circle{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  border: #fff solid 4px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 12%;
+  right: 2%;
+  position:fixed;
+  transition: .5s ease-in-out;
+}
+
+.btn-wsp-circle:hover{
+  background-color: var(--secondary-color-hover);
+  box-shadow: none;
+}
